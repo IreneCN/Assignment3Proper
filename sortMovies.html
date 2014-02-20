@@ -41,6 +41,27 @@
 		var seenIt   = [];
 		var notSeen  = [];
 
+		//for each movie in my movies' list, my for loop will check if I've seen it. 
+		//If haveSeen is true, it'll add it to seenIt. If not, it'll go to notSeen
+
+		for(var i=0; i<myMovies.length; i++)
+		{
+			console.log(i);
+			var thatMovie = myMovies[i];
+
+			if(thatMovie.haveSeen == true){
+				console.log(thatMovie);
+				//when haveSeen is true, add that movie to my seenIt list, 
+				seenIt.push(thatMovie);
+				}else{
+				//otherwise add thatMovie to notSeen list
+				notSeen.push(thatMovie);
+				} 									//this is the end of my if/else statement
+
+		} 											//this is the end of my for loop
+		console.log("sorted movies!");
+		console.log(seenIt);
+		console.log(notSeen);
 		
 
 		</script>		
