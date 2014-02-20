@@ -4,67 +4,15 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Assignment 3 Proper</title>
+		<script src="sortMovies.js" type="text/javascript">
+		</script>	
 	</head>
 	<body>
 		<h1>My Movies</h1>
 		<div class="assignment3Proper">
 			I am sorting through my list of movies
 		</div>
-		<script>
-			//Below I've created a list of movies (four objects) with four properties in my array, myMovies
-		 	//Each object contains a string, numbers and a boolean
-		 
-			var myMovies = [{
-				"title" : "Forrest Gump",
-				"releaseYear" : 1994,
-				"rating":5,
-				"haveSeen":true
-			}, {
-				"title" : "Captain Phillips",
-				"releaseYear" : 2013,
-				"rating":2,
-				"haveSeen":false
-			}, {
-				"title" : "Life is Beautiful",
-				"releaseYear":1993,
-				"rating":1,
-				"haveSeen":true
-			}, {
-				"title" : "Pirates of the Carribean",
-				"releaseYear":2011,
-				"rating":3,
-				"haveSeen": true
-			}];
-			console.log(myMovies);
-
-		//Below I will sort my movies into 2 lists based on the movies I've seen and the ones I haven't
-		var seenIt   = [];
-		var notSeen  = [];
-
-		//for each movie in my movies' list, my for loop will check if I've seen it. 
-		//If haveSeen is true, it'll add it to seenIt. If not, it'll go to notSeen
-
-		for(var i=0; i<myMovies.length; i++)
-		{
-			console.log(i);
-			var thatMovie = myMovies[i];
-
-			if(thatMovie.haveSeen == true){
-				console.log(thatMovie);
-				//when haveSeen is true, add that movie to my seenIt list, 
-				seenIt.push(thatMovie);
-				}else{
-				//otherwise add thatMovie to notSeen list
-				notSeen.push(thatMovie);
-				} 									//this is the end of my if/else statement
-
-		} 											//this is the end of my for loop
-		console.log("sorted movies!");
-		console.log(seenIt);
-		console.log(notSeen);
 		
-
-		</script>		
 	</body>
 </html>
 
